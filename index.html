@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DeepSentinel</title>
+<meta name="description" content="Argos, o algoritmo do DeepSentinel: cem olhos conferindo anúncios de suplementos com dados da Anvisa.">
+<meta property="og:title" content="DeepSentinel">
+<meta property="og:description" content="Cem olhos sobre cada anúncio.">
+<meta property="og:image" content="assets/icone.png">
+<meta name="theme-color" content="#F7F7F7">
+<link rel="icon" type="image/png" href="assets/icone.png">
+<link rel="prefetch" href="equipe.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="claro">
+
+<div class="olhos" aria-hidden="true"></div>
+
+<main class="tela">
+  <div class="logo">
+    <!-- P com olho: mesma construção do ícone da extensão, em SVG -->
+    <svg viewBox="0 0 512 512" role="img" aria-label="Logo DeepSentinel: um P com um olho">
+      <circle class="anel" cx="262" cy="198" r="90"/>
+      <circle class="anel" cx="262" cy="198" r="90"/>
+      <rect class="haste" x="100" y="42" width="62" height="440" rx="31" fill="#023436"/>
+      <circle class="bojo" cx="262" cy="198" r="152" fill="#023436"/>
+      <g class="abre">
+        <g id="olho">
+          <circle id="esclera" cx="262" cy="198" r="90" fill="#fff"/>
+          <g id="iris">
+            <circle cx="262" cy="198" r="46" fill="#02C39A"/>
+            <g id="pupila">
+              <circle cx="262" cy="198" r="23" fill="#023436"/>
+              <circle cx="271" cy="188" r="6.5" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div class="base">
+    <div>
+      <p class="marca">DeepSentinel</p>
+      <h1>Cem olhos sobre <em>cada anúncio.</em></h1>
+      <p class="sub">Argos, nosso algoritmo, leva o nome do gigante grego vigia dos deuses. Ele confere suplementos à venda online com dados da Anvisa.</p>
+    </div>
+    <a class="botao" href="equipe.html" data-ir="equipe.html" data-cor="#023436">Conhecer a equipe <span class="seta" aria-hidden="true">→</span></a>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
